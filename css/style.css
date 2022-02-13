@@ -1,0 +1,112 @@
+html, body {
+    height: 100%;
+    margin: 0;
+} body {
+    background-color: #eaf3fa;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 60px;
+    margin: 0px 0px;
+    color: #fff;
+    background-color: #4f6b8f;
+}
+
+h2, h3 { color: #19417f; }
+
+nav {
+    background-color: #b3c9e4;
+    min-width: 150px;
+    margin-left: 10px;
+    margin-top: 10px;
+    min-height: max-content;
+} nav hr {
+    margin: 0px 0px;
+}
+
+samp, code {
+    font-family: 'Courier New', Courier, monospace;
+} samp {
+    display: block;
+    margin: 5px 5px;
+    padding: 5px 5px;
+    background-color: #bbbbbb;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#homeFirstParagraph {
+    padding: 0px 0px;
+    margin-bottom: 0px;
+}
+
+#cppInfo {
+    border: 3px solid #4f6b8f;
+    background-color: #c9d5e4;
+    border-radius: 5px;
+    padding: 25px 25px;
+} #cppInfo img {
+    width: 100px;
+}
+
+#stroustrup img { width: 150px; }
+
+#stdPair img { width: 400px; }
+
+.sampleSize { width: 350px; }
+
+.verticalFigCaption {
+    padding: 0px 0px;
+    margin-top: 10px;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.framed {
+    border: 5px solid #4f6b8f;
+    border-radius: 5px;
+}
+
+.centeredContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.current {
+    background-color: #719ace;
+    font-style: italic;
+}
+
+.navLink {
+    margin: 0px 0px;
+    padding: 15px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+} .navLink:link, .navLink:visited {
+    text-decoration: none;
+    color: #19417f;
+} .navLink:hover {
+    background-color: #c9d5e4;
+} .navLink:active {
+    color: #fff;
+}
+
+.inTextLink:link, .inTextLink:visited {
+    text-decoration: none;
+    color: #719ace;
+    font-weight: bold;
+} .inTextLink:hover {
+    color: #b3c9e4;
+}
+
+.mainContent { margin: 15px; }
+
+.horizontalContainer { display: flex; }

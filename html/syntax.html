@@ -1,0 +1,93 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ | Syntax</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>C++</h1>
+    </header>
+    <div class="horizontalContainer">
+        <nav>
+            <a class="navLink" href="../html/home.html">Home</a>
+            <hr>
+            <a class="navLink" href="../html/history.html">History</a>
+            <hr>
+            <a class="navLink current" href="#">Syntax</a>
+            <hr>
+            <a class="navLink" href="../html/stl.html">The C++ STL</a>
+            <hr>
+        </nav>
+        <div class="mainContent">
+            <h2>About the 'C'-ntax (Syntax)</h2>
+            <p>
+                C++'s syntax is very similar to C's syntax since C++ is a successor of C. In fact, most C programs can be
+                compiled using a C++ compiler. If a programmer wanted to, they could write C code in a C++ file and compile it as
+                C++ code. The code will execute just fine. Though, doing this is frowned upon by many C++ programmers as they urge
+                other programmers to stick with an unwritten standard. Most C++ programmers will see a C++ program using C-style
+                semantics or overall style and will immediately call out the author to use the C++ STL or a C++ equivalent. I don't
+                entirely understand why that is, but it seems that many C++ programmers are trying to steer away from C++ being
+                derived from C and calling anything that's C-style bad.
+            </p>
+            <p>
+                As of C++20, there are 70+ reserved <a class="inTextLink" href="https://en.cppreference.com/w/cpp/keyword" target="_blank">keywords</a>.
+                It's important to know these, since you cannot have a variable or function with the same name as any of these tokens.
+            </p>
+            <h3>'Hello, World!': C vs. C++</h3>
+            <p>
+                Below are two "Hello, World!" programs. The first is written is C++ and the second is written in C.
+            </p>
+            <div class="horizontalContainer centeredContainer">
+                <figure>
+                    <img class="framed sampleSize" src="../assets/images/helloC.png" alt="Hello, World! program in C.">
+                    <figcaption class="verticalFigCaption">
+                        A "Hello, World!" program in C.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="framed sampleSize" src="../assets/images/helloCpp.png" alt="Hello, World! program in C++.">
+                    <figcaption class="verticalFigCaption">
+                        A "Hello, World!" program in C++.
+                    </figcaption>
+                </figure>
+            </div>
+            <p>
+                As we can clearly see, both languages have a lot of similarities-- Especially since C++ and C both execute code
+                from the <code>int main()</code> function; In this example, the only differences seem to be the directive to import
+                <code>iostream</code> vs. <code>stdio</code> and the method for displaying to the console. Syntactically, from this
+                example we are able to understand that C++ and C are in fact very similar and it's the main reason why many people
+                refer to both languages when mentioning one of them ("C/C++").
+            </p>
+            <h3>Fixed Size Containers: C-style arrays vs.
+                <a class="inTextLink" href="https://www.cplusplus.com/reference/array/array/">
+                    <code>std::array&lt;&gt;</code>
+                </a>
+            </h3>
+            <p>
+                C++17 introduced a new container, <code>std::array&lt;&gt;</code>, which is a C++-style array. It's a new way to create
+                arrays in C++ instead of using C-style arrays. It's similar to C-style arrays, but it's more flexible and enables
+                the programmer to use better use class member and global functions such as <code>::front()</code>, <code>::back()</code>,
+                <code>::size()</code>, and so on. Below is an example of how to use the <code>std::array</code> container over a
+                C-style array.
+            </p>
+            <div class="horizontalContainer centeredContainer">
+                <figure>
+                    <img class="framed sampleSize" src="../assets/images/arrayCpp.png" alt="std::array example.">
+                    <figcaption class="verticalFigCaption">
+                        An example of a std::array.
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img class="framed sampleSize" src="../assets/images/arrayC.png" alt="C-style array example.">
+                    <figcaption class="verticalFigCaption">
+                        An example of a C-style array.
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

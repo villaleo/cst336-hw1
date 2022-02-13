@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++ | The STL</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <h1>C++</h1>
+    </header>
+    <div class="horizontalContainer">
+        <nav>
+            <a class="navLink" href="../html/home.html">Home</a>
+            <hr>
+            <a class="navLink" href="../html/history.html">History</a>
+            <hr>
+            <a class="navLink" href="../html/syntax.html">Syntax</a>
+            <hr>
+            <a class="navLink current" href="#">The C++ STL</a>
+            <hr>
+        </nav>
+        <div class="mainContent">
+            <h2>The Standard Template Library (STL)</h2>
+            <p>
+                <a class="inTextLink" href="https://www.geeksforgeeks.org/the-c-standard-template-library-stl/" target="_blank">
+                    The STL is a collection of template classes to provide programmers common functions
+                    and implementations to data structures.
+                </a>
+                It's a library with iterators, containers,
+                and algorithms. The only prerequisite to begin working with the STL in C++ is understanding
+                template functions and classes, as most functions and every container are parameterized with
+                template parameters. <br><br>
+                The C++ STL's main components are:
+                <ul>
+                    <li>Algorithms</li>
+                    <li>Functions</li>
+                    <li>Containers</li>
+                    <li>Iterators</li>
+                </ul>
+                All of these functions and tools live in the <code>std</code> namespace.
+            </p>
+            <h3>Example: The <a class="inTextLink" href=""><code>std::pair&lt;&gt;</code></a> class</h3>
+            <div class="horizontalContainer">
+                <div>
+                    <p>
+                        <code>std::pair&lt;&gt;</code> encapsulates two values which may be of different types. These values are
+                        accessed via the <code>first</code> and <code>second</code> public members.
+                    </p>
+                    <p>
+                        This object is used in the STL to represent a pair of values. It's used internally by the <code>std::map&lt;&gt;</code>
+                        container to store key-value pairs. <code>std::pair&lt;&gt;</code> is actually a specialization of the
+                        <a class="inTextLink" href="https://www.cplusplus.com/reference/tuple/tuple/"><code>std::tuple&lt;&gt;</code></a>
+                        class, a tuple of two elements.
+                    </p>
+                    <p>
+                        On the example to the right, we have a <code>std::pair&lt;&gt;</code> object that contains a string and an integer,
+                        <code>person</code>. This object is used to store a person's name and age. After executing the code, the following
+                        output is printed:
+                    </p>
+                    <samp>
+                        Hello, John!<br>
+                        You are 42 years old.
+                    </samp>
+                </div>
+                <figure id="stdPair">
+                    <img class="framed" src="../assets/images/stdPair.png" alt="Reverse string without STL.">
+                    <figcaption class="verticalFigCaption">
+                        <span>Using the <code>std::pair&lt;&gt;</code> class.</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
